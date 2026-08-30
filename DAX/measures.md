@@ -1,11 +1,17 @@
 # DAX Measures
 
-This file contains the DAX measures used in the Sales Performance Dashboard.
+This page contains the DAX measures used in the Sales Performance Dashboard.
 
-## 1. Number of Customers
+The measures are organized by purpose and support the analysis of sales, profit, costs, customers, orders, quantity, and target performance.
 
-Calculates the distinct number of customers.
+---
+
+## Sales & Performance Measures
+
+### 1. Total Sales
+
+Calculates the total sales amount.
 
 ```DAX
-Number of Customers =
-DISTINCTCOUNT(Sales[CustomerID])
+Total Sales =
+SUM(Sales[SalesAmount])
